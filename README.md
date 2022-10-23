@@ -1,2 +1,2 @@
 # tts-demo
-tts demo from zmeet
+支持各种感情的男女声音，支持实时和离线文本合成tts语音；支持单模特声音变声，语音速率调整，语音音量大小调整；支持自定义语音模型。      Cancel changes
