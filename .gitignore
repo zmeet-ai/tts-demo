@@ -1,0 +1,9 @@
+__pycache__
+*.pyc
+*.tar.gz
+asr_res.log
+asr.log
+*.log
+*.class
+*.sh
+/nodejs/node_modules/
