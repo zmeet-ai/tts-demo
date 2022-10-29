@@ -28,8 +28,8 @@ async def main():
     args = parser.parse_args()
     
     ## 下面的app_id 和api_key仅供测试使用，生产环境请向商务申请(手机：18605811078, 邮箱：jiaozhu@abcpen.com)
-    app_id = "yitu"
-    api_key = "2258ACC4-199B-4DCB-B6F3-C2439C63E85A"
+    app_id = "test1"
+    api_key = "2258ACC4-199B-4DCB-B6F3-C2485C63E85A"
     if (len(app_id)<=0 or len(api_key)<=0):
         print("Please apply appid and appsecret, demo will exit now")
         sys.exit(1)
@@ -38,7 +38,7 @@ async def main():
     signa = get_signature_flytek(timestamp, app_id, api_key)
     querys = {
         "ts": timestamp,
-        "appid": "yitu",
+        "appid": app_id,
         "signa": signa,
         "txt": "满足用户高性价比需求的消费场景；通过流量集中分发，构成好品质加极致价格力的特卖场，满足极速版商城用户的购物需求，提高用户粘性，形成用户‘日销好货’的心智",
 
