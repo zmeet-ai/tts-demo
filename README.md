@@ -79,16 +79,16 @@ TTS模型列表
 
 | 模特名称 | 模特特点                                               | 男声/女声                                          |
 | -------- | ------------------------------------------------------ | -------------------------------------------------- |
-| 云霄     | [试听声音](https://zos.abcpen.com/models/yunxiao.mp3)  | 女声，成熟女声，声音柔和纯美                       |
-| 云逸     | [试听声音](https://zos.abcpen.com/models/yunyi.mp3)    | 女生（少女），少女声音，柔和纯美                   |
-| 云剑     | [试听声音](https://zos.abcpen.com/models/yunjian.mp3)  | 男声，央视播音，富有热情                           |
-| 云曦     | [试听声音](https://zos.abcpen.com/models/yunxi.mp3)    | 男声，抖音配音常见风格，声音较快，充满时尚         |
-| 云夏     | [试听声音](https://zos.abcpen.com/models/yunxia.mp3)   | 男声（男童），抖音配音常见风格，充满激情，热情四射 |
-| 云阳     | [试听声音](https://zos.abcpen.com/models/yunyang.mp3)  | 男声，和“云剑”相比，更正式，更有新闻联播的风格     |
-| 云北     | [试听声音](https://zos.abcpen.com/models/yunbei.mp3)   | 女生，东北风格语音，有调侃说单口相声的风格         |
-| 云妮     | [试听声音](https://zos.abcpen.com/models/yunni.mp3)    | 女生，东北风格语音，比“云北”更具备调侃的风格       |
-| 云中     | [试听声音](https://zos.abcpen.com/models/yunzhong.mp3) |                                                    |
-| 云百     | [试听声音](https://zos.abcpen.com/models/yunbai.mp3)   |                                                    |
+| 云霄     | [试听声音](https://zos.abcpen.com/zos/models/yunxiao.mp3)  | 女声，成熟女声，声音柔和纯美                       |
+| 云逸     | [试听声音](https://zos.abcpen.com/zos/models/yunyi.mp3)    | 女生（少女），少女声音，柔和纯美                   |
+| 云剑     | [试听声音](https://zos.abcpen.com/zos/models/yunjian.mp3)  | 男声，央视播音，富有热情                           |
+| 云曦     | [试听声音](https://zos.abcpen.com/zos/models/yunxi.mp3)    | 男声，抖音配音常见风格，声音较快，充满时尚         |
+| 云夏     | [试听声音](https://zos.abcpen.com/zos/models/yunxia.mp3)   | 男声（男童），抖音配音常见风格，充满激情，热情四射 |
+| 云阳     | [试听声音](https://zos.abcpen.com/zos/models/yunyang.mp3)  | 男声，和“云剑”相比，更正式，更有新闻联播的风格     |
+| 云北     | [试听声音](https://zos.abcpen.com/zos/models/yunbei.mp3)   | 女生，东北风格语音，有调侃说单口相声的风格         |
+| 云妮     | [试听声音](https://zos.abcpen.com/zos/models/yunni.mp3)    | 女生，东北风格语音，比“云北”更具备调侃的风格       |
+| 云中     | [试听声音](https://zos.abcpen.com/zos/models/yunzhong.mp3) |                                                    |
+| 云百     | [试听声音](https://zos.abcpen.com/zos/models/yunbai.mp3)   |                                                    |
 
 
 
