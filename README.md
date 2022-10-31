@@ -1,6 +1,6 @@
 # 语音合成API文档
 * [Https语音合成接口](https://github.com/zmeet-ai/tts-demo/blob/main/README.md)
-* [Websocket语音合成接口](#https://github.com/zmeet-ai/tts-demo/blob/main/docs/README.md)
+* [Websocket语音合成接口](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README.md)
 
 # ZmeetAI 语音合成优势
 
