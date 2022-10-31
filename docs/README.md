@@ -25,9 +25,9 @@
 接口地址
 
 ```text
-    http://ai.abcpen.com//v2/tts/streaming?{请求参数}
+    ws://ai.abcpen.com//v2/tts/streaming?{请求参数}
     或
-    https://ai.abcpen.com//v2/tts/streaming?{请求参数}
+    wss://ai.abcpen.com//v2/tts/streaming?{请求参数}
 ```
 
 参数格式
@@ -96,7 +96,7 @@ TTS模型列表
 ####请求示例
 
 ```text
-	https://ai.abcpen.com//v2/tts/streaming?appid=595f23df&ts=1512041814&signa=IrrzsJeOFk1NGfJHW6SkHUoN9CU=&pd=edu
+	wss://ai.abcpen.com//v2/tts/streaming?appid=595f23df&ts=1512041814&signa=IrrzsJeOFk1NGfJHW6SkHUoN9CU=&pd=edu
 ```
 
 ### 创建连接
