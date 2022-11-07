@@ -1,12 +1,15 @@
 # 语音合成API文档
 * [Https语音合成接口](https://github.com/zmeet-ai/tts-demo/blob/main/README.md)
 * [Websocket语音合成接口](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README.md)
+* [v1版本接口](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README-v1.md)
 
-# ZmeetAI 语音合成优势
+## ZmeetAI 语音合成优势
 
 * 多种模特语音发音模型，每种模型分别带有不同的感情音色风格
 * 支持Http[s]风格和WebsocketAPI风格，适应不同的工作场景
 * 支持背景音替换
+
+## 下面是Zmeet语音合成v2版本接口，[v1版本接口](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README-v1.md)
 
 # 语音合成API文档
 
@@ -58,15 +61,14 @@
 
 情感参数，支持高兴，热情，愤怒，悲哀等情感的调整最近发布，请耐心等待。
 
-| 参数              | 类型   | 必须 | 说明                                                         | 示例                                                         |
-| :---------------- | :----- | :--- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| appid             | string | 是   | 笔声开放平台应用ID                                           | 595f23df                                                     |
-| ts                | string | 是   | 当前时间戳，从1970年1月1日0点0分0秒开始到现在的秒数          | 1512041814                                                   |
-| signa             | string | 是   | 加密数字签名（基于HMACSHA1算法）                             | IrrzsJeOFk1NGfJHW6SkHUoN9CU=                                 |
-| audio_sample_rate | string | 否   | 音频采样率，有"8000", "16000", "44100", "48000"这四种选择，模式是“16000” | “160000”                                                     |
-| audio_encode      | string | 否   | 音频编码格式，有"pcm", "aac", "mpeg2", "opus", "flac"这五种选择，请选择其中一种编码格式， 默认“mpeg2” | “mpeg2”, 常规的mp3编码；详细的音频编码格式，参考上述[支持音频详情](#支持音频详情) |
-| model             | string | 否   | 支持如下模特语音选择 <br/>yunxiao<br/>yunni<br/>yunbei<br/>yunyang<br/>yunxia<br/>yunxi<br/>yunjian<br/>yunyi | 默认是"yunxia"                                               |
-| locale            | string | 否   | 国家语言，默认是“CN”, 支持多国语言合成                       |                                                              |
+| 参数              | 类型   | 必须 | 说明                                                         | 示例                         |
+| :---------------- | :----- | :--- | :----------------------------------------------------------- | :--------------------------- |
+| appid             | string | 是   | 笔声开放平台应用ID                                           | 595f23df                     |
+| ts                | string | 是   | 当前时间戳，从1970年1月1日0点0分0秒开始到现在的秒数          | 1512041814                   |
+| signa             | string | 是   | 加密数字签名（基于HMACSHA1算法）                             | IrrzsJeOFk1NGfJHW6SkHUoN9CU= |
+| audio_sample_rate | string | 否   | 音频采样率，有"8000", "16000", "44100", "48000"这四种选择，模式是“16000” | “160000”                     |
+| model             | string | 否   | 支持如下模特语音选择 <br/>yunxiao<br/>yunni<br/>yunbei<br/>yunyang<br/>yunxia<br/>yunxi<br/>yunjian<br/>yunyi | 默认是"yunxia"               |
+| locale            | string | 否   | 国家语言，默认是“CN”, 支持多国语言合成                       |                              |
 
 
 
@@ -83,8 +85,6 @@ TTS模型列表
 | 云阳     | [试听声音](https://zos.abcpen.com/zos/models/yunyang.mp3) | 男声，和“云剑”相比，更正式，更有新闻联播的风格     |
 | 云北     | [试听声音](https://zos.abcpen.com/zos/models/yunbei.mp3)  | 女生，东北风格语音，有调侃说单口相声的风格         |
 | 云妮     | [试听声音](https://zos.abcpen.com/zos/models/yunni.mp3)   | 女生，东北风格语音，比“云北”更具备调侃的风格       |
-| 云中     | [试听声音](https://zos.abcpen.com/zos/models/yunni.mp3)   | 待完善                                             |
-| 云百     | [试听声音](https://zos.abcpen.com/zos/models/yunni.mp3)   | 待完善                                             |
 
 
 
@@ -111,22 +111,9 @@ TTS模型列表
 - apiKey：接口密钥，在应用中添加实时语音转写服务时自动生成，调用方注意保管；
 - signa的生成公式：HmacSHA1(MD5(appid + ts), api_key)，具体的生成方法参考本git实例代码；
 
-####请求示例
+### 结果格式为json：
 
-```text
-	https://ai.abcpen.com/v1/tts/long?appid=595f23df&ts=1512041814&signa=IrrzsJeOFk1NGfJHW6SkHUoN9CU=&pd=edu
+```json
+{"code": "0", "data": "https://zos.abcpen.com/tts/test1/20221107/54e6b003-3ef5-4bf6-ac6c-3b5582009c14.mp3", "desc": "success"}
 ```
 
-#### 返回值
-
-结果格式为json，字段说明如下：
-
-| 参数   | 类型   | 说明                                            |
-| :----- | :----- | :---------------------------------------------- |
-| action | string | 结果标识，started:握手，result:结果，error:异常 |
-| code   | string | 结果码(具体见[错误码](#错误码))                 |
-| data   | string | 结果数据                                        |
-| desc   | string | 描述                                            |
-| sid    | string | 会话ID                                          |
-
-其中sid字段主要用于DEBUG追查问题，如果出现问题，可以提供sid帮助确认问题。
