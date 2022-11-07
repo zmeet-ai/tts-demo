@@ -9,7 +9,7 @@
 * 支持Http[s]风格和WebsocketAPI风格，适应不同的工作场景
 * 支持背景音替换
 
-## 下面是Zmeet语音合成v2版本接口，[v1版本接口](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README-v1.md)
+## 下面是Zmeet语音合成v2版本接口，V1版本接口移步到  [v1版本接口](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README-v1.md)
 
 # 语音合成API文档
 
@@ -28,7 +28,7 @@
 | 内容     | 说明                                                         |
 | :------- | ------------------------------------------------------------ |
 | 请求协议 | http[s] (为提高安全性，强烈推荐https)                        |
-| 请求地址 | http[s]: //ai.abcpen.com/v1/tts/long?{请求参数} *注：服务器IP不固定，为保证您的接口稳定，请勿通过指定IP的方式调用接口，使用域名方式调用* |
+| 请求地址 | http[s]: //ai.abcpen.com/v2/tts/long?{请求参数} *注：服务器IP不固定，为保证您的接口稳定，请勿通过指定IP的方式调用接口，使用域名方式调用* |
 | 接口鉴权 | 签名机制，详见 [signa生成](#signa生成)                       |
 | 响应格式 | 统一采用JSON格式                                             |
 | 开发语言 | 任意，只要可以向笔声云服务发起http[s]请求的均可              |
@@ -46,9 +46,9 @@
 接口地址
 
 ```text
-    http://ai.abcpen.com/v1/tts/long?{请求参数}
+    http://ai.abcpen.com/v2/tts/long?{请求参数}
     或
-    https://ai.abcpen.com/v1/tts/long?{请求参数}
+    https://ai.abcpen.com/v2/tts/long?{请求参数}
 ```
 
 参数格式
