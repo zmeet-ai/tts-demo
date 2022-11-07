@@ -3,8 +3,6 @@ import hmac
 import time
 import base64
 
-
-
 def get_signature_flytek(ts, app_id, api_key):
     tt = (app_id + ts).encode('utf-8')
     md5 = hashlib.md5()
