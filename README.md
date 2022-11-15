@@ -61,16 +61,18 @@
 
 情感参数，支持高兴，热情，愤怒，悲哀等情感的调整最近发布，请耐心等待。
 
-| 参数    | 类型   | 必须 | 说明                                                         | 示例                                                         |
-| :------ | :----- | :--- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| appid   | string | 是   | 笔声开放平台应用ID                                           | 595f23df                                                     |
-| ts      | string | 是   | 当前时间戳，从1970年1月1日0点0分0秒开始到现在的秒数          | 1512041814                                                   |
-| signa   | string | 是   | 加密数字签名（基于HMACSHA1算法）                             | IrrzsJeOFk1NGfJHW6SkHUoN9CU=                                 |
-| model   | string | 否   | 支持如下模特语音选择 <br/>yunxiao<br/>yunni<br/>yunbei<br/>yunyang<br/>yunxia<br/>yunxi<br/>yunjian<br/>yunyi | 默认是"yunxia"                                               |
-| content | string | 是   | UTF8 编码的文本内容                                          | 满足用户高性价比需求的消费场景；通过流量集中分发，构成好品质加极致价格力的特卖场 |
-| speed   | int    | 否   | 0~100，默认为0，表示不加速。                                 | 0                                                            |
-| volume  | int    | 否   | 0~100， 默认为0，表示正常语速                                | 0                                                            |
-| locale  | string | 否   | 国家语言，默认是“CN”, 支持多国语言合成                       |                                                              |
+| 参数      | 类型   | 必须 | 说明                                                         | 示例                                                         |
+| :-------- | :----- | :--- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| appid     | string | 是   | 笔声开放平台应用ID                                           | 595f23df                                                     |
+| ts        | string | 是   | 当前时间戳，从1970年1月1日0点0分0秒开始到现在的秒数          | 1512041814                                                   |
+| signa     | string | 是   | 加密数字签名（基于HMACSHA1算法）                             | IrrzsJeOFk1NGfJHW6SkHUoN9CU=                                 |
+| model     | string | 否   | 支持如下模特语音选择 <br/>yunxiao<br/>yunni<br/>yunbei<br/>yunyang<br/>yunxia<br/>yunxi<br/>yunjian<br/>yunyi | 默认是"yunxia"                                               |
+| content   | string | 是   | UTF8 编码的文本内容                                          | 满足用户高性价比需求的消费场景；通过流量集中分发，构成好品质加极致价格力的特卖场 |
+| speed     | int    | 否   | 0~100，默认为0，表示不加速。                                 | 0                                                            |
+| volume    | int    | 否   | 0~100， 默认为0，表示正常语速                                | 0                                                            |
+| audioType | string |      | 可不填，不填时默认为 5。<br/>audioType=3 返回 16K 采样率的 mp3 <br/>audioType=4 返回 8K 采样率的 mp3 <br/>audioType=5 返回 24K 采样率的 mp3<br/>audioType=6 返回 48k采样率的mp3 <br/>audioType=7 返回 16K 采样率的 pcm 格式<br/>audioType=8 返回 8K 采样率的 pcm 格式<br/>audioType=9 返回 24k 采样率的pcm格式<br/>audioType=10 返回  8K 采样率的 wav 格式<br/>audioType=11 返回 16K 采样率的 wav 格式 <br/> |                                                              |
+| locale    | string | 否   | 国家语言，默认是“CN”, 支持多国语言合成                       |                                                              |
+| locale    | string | 否   | 国家语言，默认是“CN”, 支持多国语言合成                       |                                                              |
 
 
 
