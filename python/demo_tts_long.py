@@ -21,7 +21,7 @@ async def main():
     parser = argparse.ArgumentParser(description="ASR Server offline audio file demo",
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('-u', '--url', type=str, metavar='URL',
-                        help='server url', default='localhost:3698')
+                        help='server url', default='ai.abcpen.com')
     parser.add_argument('-l', '--log_path', type=str, metavar='LOG',
                         help='log file path', default='asr_res.log')
 
@@ -41,7 +41,7 @@ async def main():
         "appid": app_id,
         "signa": signa,
         "content": "满足用户高性价比需求的消费场景；通过流量集中分发，构成好品质加极致价格力的特卖场，满足极速版商城用户的购物需求，提高用户粘性，形成用户‘日销好货’的心智",
-        "audioType": 5
+        "audioType": 11
 
     }
     url = "http://{}/v2/tts/long".format(args.url)
