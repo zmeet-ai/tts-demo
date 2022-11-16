@@ -28,8 +28,8 @@ async def main():
     args = parser.parse_args()
     
     ## 下面的app_id 和api_key仅供测试使用，生产环境请向商务申请(手机：18605811078, 邮箱：jiaozhu@abcpen.com)
-    app_id = ""
-    api_key = ""
+    app_id = "tiayiyun"
+    api_key = "3b34ec13-13c8-4b59-b998-81a7e9dfabbf"
     if (len(app_id)<=0 or len(api_key)<=0):
         print("Please apply appid and appsecret, demo will exit now")
         sys.exit(1)
