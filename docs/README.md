@@ -10,7 +10,7 @@
 | 请求地址 | http[s]: //tts.yitutech.com//v2/tts/streaming?{请求参数} *注：服务器IP不固定，为保证您的接口稳定，请勿通过指定IP的方式调用接口，使用域名方式调用* |
 | 接口鉴权 | 签名机制，详见 [signa生成](#signa生成)                       |
 | 响应格式 | 统一采用JSON格式                                             |
-| 开发语言 | 任意，只要可以向笔声云服务发起http[s]请求的均可              |
+| 开发语言 | 任意，只要可以向依图云服务发起http[s]请求的均可              |
 
 
 
@@ -42,7 +42,7 @@
 
 | 参数             | 类型   | 必须 | 说明                                                         | 示例                                                         |
 | :--------------- | :----- | :--- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| appid            | string | 是   | 笔声开放平台应用ID                                           | 595f23df                                                     |
+| appid            | string | 是   | 依图开放平台应用ID                                           | 595f23df                                                     |
 | ts               | string | 是   | 当前时间戳，从1970年1月1日0点0分0秒开始到现在的秒数          | 1512041814                                                   |
 | signa            | string | 是   | 加密数字签名（基于HMACSHA1算法）                             | IrrzsJeOFk1NGfJHW6SkHUoN9CU=                                 |
 | audio_samplerate | string | 否   | 音频采样率，有"8000", "16000", "44100", "48000"这四种选择，模式是“16000” | “160000”                                                     |
@@ -57,16 +57,16 @@ TTS模型列表
 
 | 模特名称 | 模特特点                                                  | 男声/女声                                          |
 | -------- | --------------------------------------------------------- | -------------------------------------------------- |
-| 云霄     | [试听声音](https://zos.abcpen.com/zos/models/yunxiao.mp3) | 女声，成熟女声，声音柔和纯美                       |
-| 云逸     | [试听声音](https://zos.abcpen.com/zos/models/yunyi.mp3)   | 女生（少女），少女声音，柔和纯美                   |
-| 云剑     | [试听声音](https://zos.abcpen.com/zos/models/yunjian.mp3) | 男声，央视播音，富有热情                           |
-| 云曦     | [试听声音](https://zos.abcpen.com/zos/models/yunxi.mp3)   | 男声，抖音配音常见风格，声音较快，充满时尚         |
-| 云夏     | [试听声音](https://zos.abcpen.com/zos/models/yunxia.mp3)  | 男声（男童），抖音配音常见风格，充满激情，热情四射 |
-| 云阳     | [试听声音](https://zos.abcpen.com/zos/models/yunyang.mp3) | 男声，和“云剑”相比，更正式，更有新闻联播的风格     |
-| 云北     | [试听声音](https://zos.abcpen.com/zos/models/yunbei.mp3)  | 女生，东北风格语音，有调侃说单口相声的风格         |
-| 云妮     | [试听声音](https://zos.abcpen.com/zos/models/yunni.mp3)   | 女生，东北风格语音，比“云北”更具备调侃的风格       |
-| 云中     | [试听声音](https://zos.abcpen.com/zos/models/yunni.mp3)   | 待完善                                             |
-| 云百     | [试听声音](https://zos.abcpen.com/zos/models/yunni.mp3)   | 待完善                                             |
+| 云霄     | [试听声音](http://zos.yitutech.com/zos/models/yunxiao.mp3) | 女声，成熟女声，声音柔和纯美                       |
+| 云逸     | [试听声音](http://zos.yitutech.com/zos/models/yunyi.mp3)   | 女生（少女），少女声音，柔和纯美                   |
+| 云剑     | [试听声音](http://zos.yitutech.com/zos/models/yunjian.mp3) | 男声，央视播音，富有热情                           |
+| 云曦     | [试听声音](http://zos.yitutech.com/zos/models/yunxi.mp3)   | 男声，抖音配音常见风格，声音较快，充满时尚         |
+| 云夏     | [试听声音](http://zos.yitutech.com/zos/models/yunxia.mp3)  | 男声（男童），抖音配音常见风格，充满激情，热情四射 |
+| 云阳     | [试听声音](http://zos.yitutech.com/zos/models/yunyang.mp3) | 男声，和“云剑”相比，更正式，更有新闻联播的风格     |
+| 云北     | [试听声音](http://zos.yitutech.com/zos/models/yunbei.mp3)  | 女生，东北风格语音，有调侃说单口相声的风格         |
+| 云妮     | [试听声音](http://zos.yitutech.com/zos/models/yunni.mp3)   | 女生，东北风格语音，比“云北”更具备调侃的风格       |
+| 云中     | [试听声音](http://zos.yitutech.com/zos/models/yunni.mp3)   | 待完善                                             |
+| 云百     | [试听声音](http://zos.yitutech.com/zos/models/yunni.mp3)   | 待完善                                             |
 
 
 
