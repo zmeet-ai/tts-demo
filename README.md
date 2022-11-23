@@ -41,21 +41,9 @@
 
 实时语音转写接口调用包括两个阶段：握手阶段和实时通信阶段。
 
-### 握手阶段
+### API调用
 
-接口地址
-
-```text
-    http://ai.abcpen.com/v2/tts/long?{请求参数}
-    或
-    https://ai.abcpen.com/v2/tts/long?{请求参数}
-```
-
-参数格式
-
-```text
-    key1=value1&key2=value2…（key和value都需要进行urlencode）
-```
+* 注意下述参数采用 **x-www-form-urlencoded** 表单方式提交
 
 参数说明
 
