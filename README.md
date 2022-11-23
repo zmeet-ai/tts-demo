@@ -1,7 +1,5 @@
 # 语音合成API文档
-* [Https语音合成接口](https://github.com/zmeet-ai/tts-demo/blob/main/README.md)
-* [v1版本接口](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README-v1.md)
-* [Websocket语音合成接口](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README.md) （文档待完善）
+
 
 ## ZmeetAI 语音合成优势
 
@@ -9,7 +7,7 @@
 * 支持Http[s]风格和WebsocketAPI风格，适应不同的工作场景
 * 支持背景音替换
 
-## 下面是Zmeet语音合成v2版本接口，V1版本接口移步到  [v1版本接口](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README-v1.md)
+## 下面是Zmeet语音合成v2版本接口，V1版本接口移步到  v1版本接口请到doc目录下查看README-v1.md
 
 # 语音合成API文档
 
