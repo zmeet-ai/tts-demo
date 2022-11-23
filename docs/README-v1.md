@@ -1,5 +1,5 @@
 ## 接口说明
-该文档是Zmeet V1版本接口，支持多音字定义与矫正；支持国内六种model发音。
+该文档是yitu V1版本接口，支持多音字定义与矫正；支持国内六种model发音。
 
 ## 授权和接入
 
@@ -13,7 +13,7 @@
 
 DevId
 
-唯一的用户ID， 举例 "zmeet"；一般俗称为 application key
+唯一的用户ID， 举例 "yitu"；一般俗称为 application key
 
 DevKey
 
@@ -49,7 +49,7 @@ JSON
 
 ### 简介
 
-* zmeet语音合成通过 REST API 的方式给开发者提供一个通用的 HTTP接口
+* yitu语音合成通过 REST API 的方式给开发者提供一个通用的 HTTP接口
 * **语音格式**：wav（不压缩，pcm 编码）格式，采样率 16000，16bit 采样精度的单声道语音
 * 语音合成支持自定义词组；词组的定义跟随客户，针对该特定客户是特定的语音片段
 * 支持自定义域名请求（自定义域名需要提供**子域名**和域名对应的**ssl证书**）
@@ -127,7 +127,7 @@ function verifySha256Sign(appKey, timestamp, appSecret) {
     return hashStr.toLowerCase();
 };
 
-async function ttsZmeet(content, spkid, appKey, timestamp, sign) {
+async function ttsyitu(content, spkid, appKey, timestamp, sign) {
     let resTts = {
         message: "",
         code: "",
@@ -178,7 +178,7 @@ async function ttsZmeet(content, spkid, appKey, timestamp, sign) {
     let timestamp = Date.now()/1000 + "";
     let sign = verifySha256Sign(appKey, timestamp, appSecret);
     console.log("sign sha256 is: ", sign);
-    let tts2 = await ttsZmeet("2022年海南省普通高考普通类考生成绩分布表显示，900分的考生全海南省一共3名。25日，男孩母亲回应称，得知成绩时自己很开心，清华北大两所高校都已取得联系，孩子目前有些迷茫，暂未作出决定，打算先选好专业",
+    let tts2 = await ttsyitu("2022年海南省普通高考普通类考生成绩分布表显示，900分的考生全海南省一共3名。25日，男孩母亲回应称，得知成绩时自己很开心，清华北大两所高校都已取得联系，孩子目前有些迷茫，暂未作出决定，打算先选好专业",
         0, appKey, timestamp, sign);
     console.log("tts2: ", tts2);
 
