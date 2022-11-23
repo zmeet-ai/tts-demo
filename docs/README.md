@@ -7,7 +7,7 @@
 | 内容     | 说明                                                         |
 | :------- | ------------------------------------------------------------ |
 | 请求协议 | http[s] (为提高安全性，强烈推荐https)                        |
-| 请求地址 | http[s]: //ai.abcpen.com//v2/tts/streaming?{请求参数} *注：服务器IP不固定，为保证您的接口稳定，请勿通过指定IP的方式调用接口，使用域名方式调用* |
+| 请求地址 | http[s]: //tts.yitutech.com//v2/tts/streaming?{请求参数} *注：服务器IP不固定，为保证您的接口稳定，请勿通过指定IP的方式调用接口，使用域名方式调用* |
 | 接口鉴权 | 签名机制，详见 [signa生成](#signa生成)                       |
 | 响应格式 | 统一采用JSON格式                                             |
 | 开发语言 | 任意，只要可以向笔声云服务发起http[s]请求的均可              |
@@ -25,9 +25,9 @@
 接口地址
 
 ```text
-    ws://ai.abcpen.com//v2/tts/streaming?{请求参数}
+    ws://tts.yitutech.com//v2/tts/streaming?{请求参数}
     或
-    wss://ai.abcpen.com//v2/tts/streaming?{请求参数}
+    wss://tts.yitutech.com//v2/tts/streaming?{请求参数}
 ```
 
 参数格式
@@ -96,12 +96,12 @@ TTS模型列表
 ####请求示例
 
 ```text
-	wss://ai.abcpen.com//v2/tts/streaming?appid=595f23df&ts=1512041814&signa=IrrzsJeOFk1NGfJHW6SkHUoN9CU=&pd=edu
+	wss://tts.yitutech.com//v2/tts/streaming?appid=595f23df&ts=1512041814&signa=IrrzsJeOFk1NGfJHW6SkHUoN9CU=&pd=edu
 ```
 
 ### 创建连接
 
-ws api： wss://ai.abcpen.com/v2/tts/streaming
+ws api： wss://tts.yitutech.com/v2/tts/streaming
 
 
 ### 开始请求

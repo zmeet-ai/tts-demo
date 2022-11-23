@@ -80,9 +80,9 @@ JSON
 
 #### url
 
-**`https://ai.abcpen.com/api/tts`**
+**`http://tts.yitutech.com/api/tts`**
 
-**域名支持自定义绑定，以替换"ai.abcpen.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
+**域名支持自定义绑定，以替换"tts.yitutech.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
 
 #### key
 
@@ -105,7 +105,7 @@ JSON
 ```javascript
 { "message":"xxx",	
 "code":"0",
-“result": {”audioUrl":"https://ai.abcpen.com/xxx" 
+“result": {”audioUrl":"http://tts.yitutech.com/xxx" 
          }
 }
 ```
@@ -143,7 +143,7 @@ async function ttsZmeet(content, spkid, appKey, timestamp, sign) {
         };
         options = {
             method: 'POST',
-            uri: 'https://ai.abcpen.com/api/tts',
+            uri: 'http://tts.yitutech.com/api/tts',
             form: jsonData,
             headers:{
                 "x-dev-id": appKey,
@@ -201,9 +201,9 @@ async function ttsZmeet(content, spkid, appKey, timestamp, sign) {
 
 #### url
 
-**`https://ai.abcpen.com/api/ttspoly/create`**
+**`http://tts.yitutech.com/api/ttspoly/create`**
 
-**域名支持自定义绑定，以替换"ai.abcpen.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
+**域名支持自定义绑定，以替换"tts.yitutech.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
 
 #### key
 
@@ -234,9 +234,9 @@ INSERT|还款|huan2 kuan3
 ### 更新多音字
 #### url
 
-**`https://ai.abcpen.com/api/ttspoly/update`**
+**`http://tts.yitutech.com/api/ttspoly/update`**
 
-**域名支持自定义绑定，以替换"ai.abcpen.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
+**域名支持自定义绑定，以替换"tts.yitutech.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
 
 #### key
 
@@ -267,9 +267,9 @@ UPDATE|服务器|fu2 wu3 qi2
 
 #### url
 
-**`https://ai.abcpen.com/api/ttspoly/get`**
+**`http://tts.yitutech.com/api/ttspoly/get`**
 
-**域名支持自定义绑定，以替换"ai.abcpen.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
+**域名支持自定义绑定，以替换"tts.yitutech.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
 
 #### key
 
@@ -300,9 +300,9 @@ UPDATE|服务器|fu2 wu3 qi2
 
 #### url
 
-**`https://ai.abcpen.com/api/ttspoly/delete`**
+**`http://tts.yitutech.com/api/ttspoly/delete`**
 
-**域名支持自定义绑定，以替换"ai.abcpen.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
+**域名支持自定义绑定，以替换"tts.yitutech.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
 
 #### key
 
