@@ -1,7 +1,7 @@
 ## 使用方法
 ```
 npm install
-node tts.js
+node tts_v1.js
 ```
 
 ## 开发者文档
