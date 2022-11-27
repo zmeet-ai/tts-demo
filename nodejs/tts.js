@@ -25,9 +25,7 @@ async function ttsDemo(content, spkid, appKey, timestamp, sign) {
         };
         options = {
             method: 'POST',
-            //uri: 'http://tts.yitutech.com/api/tts',
             uri: 'https://ai.abcpen.com/api/tts',
-            //uri: 'http://127.0.0.1:3010/api/tts',
             form: jsonData,
             headers: {
                 "x-dev-id": appKey,
