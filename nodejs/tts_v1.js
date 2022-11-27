@@ -56,7 +56,7 @@ async function ttsDemo(content, spkid, appKey, timestamp, sign) {
 (async () => {
     let appKey = ""
     let appSecret = ""
-    if (appKey.length <=0 || appSecret <=0 ) {
+    if (appKey.length <= 0 || appSecret <= 0) {
         console.log("请向商务申请开发者密钥！");
         process.exit(0);
     }

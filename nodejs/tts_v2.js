@@ -70,7 +70,7 @@ async function ttsDemo(content, appKey, timestamp, sign) {
 
     console.log("sign sha256 is: ", signa);
     let tts2 = await ttsDemo("我是人工智能小芯，我是全世界最好听的语音！",
-                appKey, timestamp, signa);
+        appKey, timestamp, signa);
     console.log("tts2: ", tts2);
 
 })();
