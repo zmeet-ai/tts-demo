@@ -21,7 +21,7 @@ async function ttsDemo(content, spkid, appKey, timestamp, sign) {
         jsonData = {
             spkid: spkid,
             content: content,
-            audioType: 11
+            audioType: 3
         };
         options = {
             method: 'POST',
@@ -54,7 +54,6 @@ async function ttsDemo(content, spkid, appKey, timestamp, sign) {
 };
 
 (async () => {
-
     let appKey = ""
     let appSecret = ""
     if (appKey.length <=0 || appSecret <=0 ) {
@@ -67,7 +66,7 @@ async function ttsDemo(content, spkid, appKey, timestamp, sign) {
     let sign = verifySha256Sign(appKey, timestamp, appSecret);
     console.log("sign sha256 is: ", sign);
     let tts2 = await ttsDemo("满足用户高性价比需求的消费场景；通过流量集中分发，构成好品质加极致价格力的特卖场，满足极速版商城用户的购物需求，提高用户粘性，形成用户‘日销好货’的心智",
-        0, appKey, timestamp, sign);
+        7, appKey, timestamp, sign);
     console.log("tts2: ", tts2);
 
 })();

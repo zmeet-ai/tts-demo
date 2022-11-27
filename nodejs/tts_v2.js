@@ -57,8 +57,8 @@ async function ttsDemo(content, appKey, timestamp, sign) {
 };
 
 (async () => {
-    let appKey = "test1"
-    let appSecret = "2258ACC4-199B-4DCB-B6F3-C2485C63E85A"
+    let appKey = ""
+    let appSecret = ""
     if (appKey.length <= 0 || appSecret <= 0) {
         console.log("请向商务申请开发者密钥！");
         process.exit(0);
@@ -69,8 +69,7 @@ async function ttsDemo(content, appKey, timestamp, sign) {
     let signa = get_sign_zmeet(appKey, appSecret, timestamp)
 
     console.log("sign sha256 is: ", signa);
-    let tts2 = await ttsDemo("满足用户高性价比需求的消费场景；通过流量集中分发，构成好品质加极致价格力的特卖场，\
-                    满足极速版商城用户的购物需求，提高用户粘性，形成用户‘日销好货’的心智",
+    let tts2 = await ttsDemo("我是人工智能小芯，我是全世界最好听的语音！",
                 appKey, timestamp, signa);
     console.log("tts2: ", tts2);
 
