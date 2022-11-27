@@ -67,7 +67,7 @@ JSON
 
 |   参数    | 说明                                                         | 是否必须 |
 | :-------: | :----------------------------------------------------------- | -------- |
-|   spkid   | TTS 发音人标识音源 id 0-6,实际可用范围根据情况, 可以不设置,默认是 0; 其中0：女声（柔和）；<br/>1，女声（正式）；2，女生（柔和带正式）；<br/>3：男声（柔和），4：男声（柔和带正式）；<br/>5：男声（闽南话）；6：女生（闽南话）。<br/><br/>* 下述发音人从v2版本合并过来，音色准，发音自然<br/><br/>yunxiao 云霄，对应spkid为7<br/>yunni 云妮 ，对应spkid为8<br/>yunbei 云北，对应spkid为9<br/>yunyang 云阳，对应spkid为10<br/>yunxia 云夏，对应spkid为11<br/>yunxi 云曦，对应spkid为12<br/>yunjian 云剑，对应spkid为13<br/>yunyi 云逸，对应spkid为14 | 否       |
+|   spkid   | TTS 发音人标识音源 id 0-6,实际可用范围根据情况, 可以不设置,默认是 0; 其中0：女声（柔和）；<br/>1，女声（正式）；2，女生（柔和带正式）；<br/>3：男声（柔和），4：男声（柔和带正式）；<br/>5：男声（闽南话）；6：女生（闽南话）。<br/><br/>* 下述发音人从v2版本合并过来，音色准，发音自然<br/><br/>7. yunxiao 云霄，对应spkid为 7<br/>8. yunni 云妮 ，对应spkid为 8<br/>9. yunbei 云北，对应spkid为 9<br/>10. yunyang 云阳，对应spkid为 10<br/>11. yunxia 云夏，对应spkid为 11<br/>12.yunxi 云曦，对应spkid为 12<br/>13. yunjian 云剑，对应spkid为 13<br/>14. yunyi 云逸，对应spkid为 14 | 否       |
 | audioType | 可不填，不填时默认为 3。<br/>audioType=3 返回 16K 采样率的 mp3 <br/>audioType=4 返回 8K 采样率的 mp3 <br/>audioType=5 返回 24K 采样率的 mp3<br/>audioType=6 返回 48k采样率的mp3 <br/>audioType=7 返回 16K 采样率的 pcm 格式 <br/>audioType=8 返回 8K 采样率的 pcm 格式<br/>audioType=9 返回 24k 采样率的pcm格式<br/>audioType=10 返回  8K 采样率的 wav 格式 <br/>audioType=11 返回 16K 采样率的 wav 格式 | 否       |
 |   speed   | 语速 0.75-1.25 可以不设置,默认是 1.0                         | 否       |
 |  volume   | 音量 0.75-1.25 可以不设置,默认是 1.0                         | 否       |
