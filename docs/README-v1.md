@@ -88,10 +88,9 @@ JSON
 #### （4）返回参数
 
 ```javascript
-{ "message":"xxx",	
+{ "msg":"xxx",	
 "code":"0",
-“result": {”audioUrl":"https://ai.abcpen.com/xxx" 
-         }
+"result": {"audioUrl":"https://ai.abcpen.com/xxx"} 
 }
 ```
 
