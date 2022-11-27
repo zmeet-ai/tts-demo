@@ -41,7 +41,7 @@ JSON
 | 2        | msg          | --         | string   | 响应说明   |
 | 3        | result       | --         | string   | 响应结果   |
 
-## 三、语音合成
+## 三、语音合成API
 ### 1.  参数指标
 #### 发音准确度大于99%
 * 发音准确度=正确发音用例数/总用例数 X 100%
@@ -55,12 +55,12 @@ JSON
 * 综合评测拟人性、连贯性、韵律感、保真度等。
 
 ### 2. API
-#### （1）url
+#### （1）URL
 **`https://ai.abcpen.com/api/tts`**
 **域名支持自定义绑定，以替换"ai.abcpen.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
-#### （2）key
+#### （2）KEY
 * 使用之前，请向商务申请appKey和appSecret, 以正常服务请求。
-#### （3）参数说明：
+#### （3）请求参数：
 
 * 以HTTPS POST(x-www-form-urlencoded)请求发送
 
@@ -85,7 +85,7 @@ JSON
 | 云阳     | [试听声音](https://zos.abcpen.com/zos/models/yunyang.mp3) | 男声，和“云剑”相比，更正式，更有新闻联播的风格     |
 | 云北     | [试听声音](https://zos.abcpen.com/zos/models/yunbei.mp3)  | 女生，东北风格语音，有调侃说单口相声的风格         |
 | 云妮     | [试听声音](https://zos.abcpen.com/zos/models/yunni.mp3)   | 女生，东北风格语音，比“云北”更具备调侃的风格       |
-#### （4）返回参数说明
+#### （4）返回参数
 
 ```javascript
 { "message":"xxx",	
@@ -170,7 +170,7 @@ async function ttsZmeet(content, spkid, appKey, timestamp, sign) {
 *Java, C++, Rust, c#等示例代码即将提供*
 
 
-## 四、语音合成多音字自定义
+## 四、语音合成多音字自定义API
 
 ### （一）简介
 
@@ -178,17 +178,17 @@ async function ttsZmeet(content, spkid, appKey, timestamp, sign) {
 
 ### （二）增加多音字API
 
-#### 1. url
+#### 1. URL
 
 **`https://ai.abcpen.com/api/ttspoly/create`**
 
 **域名支持自定义绑定，以替换"ai.abcpen.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
 
-#### 2.  key
+#### 2.  KEY
 
 * 使用之前，请向商务申请appKey和appSecret, 以正常服务请求。
 
-#### 3. 参数说明
+#### 3. 请求参数
 
 以HTTPS POST(x-www-form-urlencoded)请求发送
 
@@ -199,7 +199,7 @@ INSERT|还钱|huan2 qian2
 INSERT|还款|huan2 kuan3
 ```
 
-#### 4. 返回参数说明
+#### 4. 返回参数
 
 返回参数实例：
 
@@ -209,17 +209,17 @@ INSERT|还款|huan2 kuan3
 
 
 ### （三）更新多音字
-#### url
+#### 1. URL
 
 **`https://ai.abcpen.com/api/ttspoly/update`**
 
 **域名支持自定义绑定，以替换"ai.abcpen.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
 
-#### 1. key
+#### 2. KEY
 
 * 使用之前，请向商务申请appKey和appSecret, 以正常服务请求。
 
-#### 2. 参数说明
+#### 3. 请求参数
 
 以HTTPS POST(x-www-form-urlencoded)请求发送
 
@@ -230,7 +230,7 @@ UPDATE|还钱|huan2 qian2
 UPDATE|服务器|fu2 wu3 qi2
 ```
 
-#### 3.  返回参数
+#### 4.  返回参数
 
 返回参数实际举例
 
@@ -240,17 +240,17 @@ UPDATE|服务器|fu2 wu3 qi2
 
 ### （四）查询多音字
 
-####  1. url
+####  1. URL
 
 **`https://ai.abcpen.com/api/ttspoly/get`**
 
 **域名支持自定义绑定，以替换"ai.abcpen.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
 
-#### 2. key
+#### 2. KEY
 
 * 使用之前，请向商务申请appKey和appSecret, 以正常服务请求。
 
-#### 3. 参数说明：
+#### 3. 请求参数：
 
 以HTTPS POST(x-www-form-urlencoded)请求发送
 POST的body为类似如下的内容（下面是创建2个词组，分别是“还钱”和“还款”）
@@ -269,15 +269,15 @@ UPDATE|服务器|fu2 wu3 qi2
 ```
 
 ### （五）删除多音字
-####  1. url
+####  1. URL
 **`https://ai.abcpen.com/api/ttspoly/delete`**
 
 **域名支持自定义绑定，以替换"ai.abcpen.com" ; 支持自定义绑定时，需要提供该域名的ssl证书。**
 
-#### 2.  key
+#### 2.  KEY
 * 使用之前，请向商务申请appKey和appSecret, 以正常服务请求。
 
-#### 3. 参数说明
+#### 3. 请求参数
 
 以HTTPS POST(x-www-form-urlencoded)请求发送
 POST的body为类似如下的内容（下面是创建2个词组，分别是“还钱”和“还款”）
