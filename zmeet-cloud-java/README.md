@@ -14,7 +14,7 @@ repositories {
 }
 
 dependencies {
-    api "com.abcpen.cloud:ai-cloud:0.0.1"
+    api "com.abcpen.cloud:ai-cloud:0.0.2"
 }
 ```
 
