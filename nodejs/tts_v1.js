@@ -32,7 +32,7 @@ async function ttsDemo(content, spkid, appKey, timestamp, sign) {
                 "x-signature": sign,
                 "x-request-send-timestamp": timestamp
             },
-            timeout: 5000,
+            timeout: 20000,
             forever: true
         }
     }
@@ -54,8 +54,8 @@ async function ttsDemo(content, spkid, appKey, timestamp, sign) {
 };
 
 (async () => {
-    let appKey = ""
-    let appSecret = ""
+    let appKey = "1545"
+    let appSecret = "80041d07-db1d-40fc-bdbb-df8e2a45f693"
     if (appKey.length <= 0 || appSecret <= 0) {
         console.log("请向商务申请开发者密钥！");
         process.exit(0);
@@ -66,7 +66,7 @@ async function ttsDemo(content, spkid, appKey, timestamp, sign) {
     let sign = verifySha256Sign(appKey, timestamp, appSecret);
     console.log("sign sha256 is: ", sign);
     let tts2 = await ttsDemo("满足用户高性价比需求的消费场景；通过流量集中分发，构成好品质加极致价格力的特卖场，满足极速版商城用户的购物需求，提高用户粘性，形成用户‘日销好货’的心智",
-        7, appKey, timestamp, sign);
+        11, appKey, timestamp, sign);
     console.log("tts2: ", tts2);
 
 })();

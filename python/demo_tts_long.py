@@ -35,13 +35,14 @@ async def main():
         sys.exit(1)
     timestamp = str(int(time.time()))
 
-    signa = get_signature_yitu(timestamp, app_id, api_key)
+    signa = get_signature_flytek(timestamp, app_id, api_key)
     querys = {
         "ts": timestamp,
         "appid": app_id,
         "signa": signa,
         "content": "满足用户高性价比需求的消费场景；通过流量集中分发，构成好品质加极致价格力的特卖场，满足极速版商城用户的购物需求，提高用户粘性，形成用户‘日销好货’的心智",
-        "audioType": 5
+        "audioType": 5,
+        "style":"flytek"
 
     }
     url = "https://{}/v2/tts/long".format(args.url)
