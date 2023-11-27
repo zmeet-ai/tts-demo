@@ -26,7 +26,7 @@
 {"code":"0","msg":"success","data":{"audio_url":"https://zos.abcpen.com/tts/test1/20231127/audio/28386da3-92c5-484b-9a4d-73a29d215be1.wav","time":0.132161537068896}}
 ```
 #### 代码示例
-参考 (极速版本代码示例)[./python/fast_tts.py]
+参考 [极速版本代码示例](./python/fast_tts.py)
 
 
 
