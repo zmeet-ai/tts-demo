@@ -16,7 +16,7 @@
 |    参数    | 数据类型 | 是否必须 | 说明                                                         | 默认值    |
 | :--------: | -------- | -------- | :----------------------------------------------------------- | --------- |
 |    text    | String   | 是       | 待合成的中英文文本，需统一编码成utf-8格式                    |           |
-|  emotion   | String   | 否       | 该段文本的情感， "neutral" (普通),  "happy"（开心）, "angry"（生气）, "sad"（悲伤）, "fear"（恐惧）, "hate"（厌恶）, "surprise"(惊讶) | "普通"    |
+|  emotion   | String   | 否       | 该段文本的情感， "neutral" (自然),  "happy"（开心）, "angry"（生气）, "sad"（悲伤）, "fear"（恐惧）, "hate"（厌恶）, "surprise"(惊讶) | "普通"    |
 | speaker_id | String   | 否       | 语音合成的具体的模特发音id号，支持2000多种模特发音           | "1000"    |
 |   speed    | float    | 语速     | 分为： " x-slow", "slow",  "medium", " fast",  "x-fast", "default" | "default" |
 
