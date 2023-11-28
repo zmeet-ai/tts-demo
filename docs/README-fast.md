@@ -19,6 +19,7 @@
 |  emotion   | String   | 否       | 该段文本的情感， "neutral" (自然),  "happy"（开心）, "angry"（生气）, "sad"（悲伤）, "fear"（恐惧）, "hate"（厌恶）, "surprise"(惊讶) | "普通"    |
 | speaker_id | String   | 否       | 语音合成的具体的模特发音id号，支持2000多种模特发音           | "1000"    |
 |   speed    | float    | 语速     | 分为： " x-slow", "slow",  "medium", " fast",  "x-fast", "default" | "default" |
+| audio_type | string   | 声音类型 | 可不填，不填时默认为 5。<br/>audioType=3 返回 16K 采样率的 mp3 <br/>audioType=4 返回 8K 采样率的 mp3 <br/>audioType=5 返回 24K 采样率的 mp3<br/>audioType=6 返回 48k采样率的mp3 <br/>audioType=7 返回 16K 采样率的 pcm 格式<br/>audioType=8 返回 8K 采样率的 pcm 格式<br/>audioType=9 返回 24k 采样率的pcm格式<br/>audioType=10 返回  8K 采样率的 wav 格式<br/>audioType=11 返回 16K 采样率的 wav 格式 <br/> | "5"       |
 
 #### 返回参数
 
@@ -74,6 +75,14 @@
 | 云辰     | [试听语音](https://zos.abcpen.com/tts/test1/20231128/61895f9b-ddfe-4cef-b21e-d325c5150352.mp3) | 台湾口音; 支持中英文                                         | 中国/台湾 |
 | 云昀     | [试听语音](https://zos.abcpen.com/tts/test1/20231128/75d33562-3c6e-4980-93d0-a3dd1288852e.mp3) | 台湾口音; 支持中英文                                         | 中国/台湾 |
 | 云雨     | [试听语音](https://zos.abcpen.com/tts/test1/20231128/19680faa-3868-444f-b81a-5c02cbbfb60e.mp3) | 台湾口音; 支持中英文                                         | 中国/台湾 |
+| Ana      |                                                              |                                                              |           |
+| Chris    |                                                              |                                                              |           |
+| Eric     |                                                              |                                                              |           |
+| Robert   |                                                              |                                                              |           |
+| Jenny    |                                                              |                                                              |           |
+| Michel   |                                                              |                                                              |           |
+| Roger    |                                                              |                                                              |           |
+| Steff    |                                                              |                                                              |           |
 
 
 
