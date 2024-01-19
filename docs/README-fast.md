@@ -4,7 +4,7 @@
 * 支持中英文混合文本
 * 支持感情表达
 #### URL
-**`https://tts-dev.abcpen.com/tts/v1/fast/gen`**
+**`https://asr-pre.abcpen.com:8443/tts/v1/fast/gen`**
 中英文的语音合成
 
 #### KEY
@@ -26,7 +26,7 @@
 参考 [极速版本代码示例](../python/fast_tts.py)
 
 ```py
-url = "https://tts-dev.abcpen.com/tts/v1/fast/gen"
+url = "https://asr-pre.abcpen.com:8443/tts/v1/fast/gen"
 text = f"从外界对费玉清的一贯印象来看，他不仅是一位音乐天才，更是一个内心深沉、低调谦和的人。凭借数十年的坚守和卓越才华，他被誉为娱乐圈的楷模"
 
 headers = {
@@ -63,7 +63,7 @@ response = requests.post(url, headers=headers, data=query_post_apply)
 * 支持中英文混合文本
 * 吐字更加圆润
 #### URL
-**`https://tts-dev.abcpen.com/tts/v1/emotion/long`**
+**`https://asr-pre.abcpen.com:8443/tts/v1/emotion/long`**
 中英文的语音合成
 
 #### KEY
@@ -112,7 +112,7 @@ response = requests.post(url, headers=headers, data=query_post_apply)
 参考 [极速版本代码示例](../python/fast_tts.py)
 
 ```py
-url = "https://tts-dev.abcpen.com/tts/v1/emotion/long"
+url = "https://asr-pre.abcpen.com:8443/tts/v1/emotion/long"
 text = f"从外界对费玉清的一贯印象来看，他不仅是一位音乐天才，更是一个内心深沉、低调谦和的人。凭借数十年的坚守和卓越才华，他被誉为娱乐圈的楷模"
 
 headers = {
