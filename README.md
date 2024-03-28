@@ -10,4 +10,4 @@
 ## 版本
 ### [极速版本](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README-fast.md#中英文语音极速合成版本)
 ### [轻便版本](https://github.com/zmeet-ai/tts-demo/blob/main/docs/README-fast.md#中英文语音轻便版)
-## 
+### [gpt版本] 
